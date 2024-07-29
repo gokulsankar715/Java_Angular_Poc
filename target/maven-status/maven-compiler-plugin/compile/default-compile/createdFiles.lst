@@ -1,0 +1,9 @@
+com\bosch\user\mapper\UserMapper.class
+com\bosch\user\controller\UserController.class
+com\bosch\user\entity\Users.class
+com\bosch\user\repository\UserRepository.class
+com\bosch\user\service\UserService.class
+com\bosch\user\UserApplication.class
+com\bosch\user\dto\UserDto$UserDtoBuilder.class
+com\bosch\user\dto\UserDto.class
+com\bosch\user\mapper\UserMapperImpl.class
