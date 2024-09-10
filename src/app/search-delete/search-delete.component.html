@@ -1,0 +1,35 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+    <div class="alert alert-success" role="alert">
+    Complete User List
+  </div>
+    <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Contact.Number</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.userName}}</td>
+            <td>{{user.userAddress}}</td>
+            <td>{{user.userEmailId}}</td>
+            <td>{{user.userMobileNo}}</td>
+            <td>
+            <button class="btn btn-warning btn" (click)="updateUser(user.id)"><span class="glyphicon glyphicon-edit"></span> Update</button>
+            <button class="btn btn-danger btn" (click)="delteUser(user.id)" style="margin-left: 10px"><span class="glyphicon glyphicon-remove"></span> Delete</button>
+            <button class="btn btn-info btn" (click)="getUserById(user.id)" style="margin-left: 10px"><span class="glyphicon glyphicon-cog"></span> Details</button>
+        </td>
+          </tr>
+    </tbody>
+    </table>

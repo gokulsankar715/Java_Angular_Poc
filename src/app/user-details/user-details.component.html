@@ -1,0 +1,40 @@
+
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }
+    </style>
+
+
+<div class="alert alert-info" role="alert">
+    User Details of {{user.userName}}
+  </div>
+    <table style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <td>{{user.userName}}</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>{{user.userAddress}}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{user.userEmailId}}</td>
+        </tr>
+        <tr>
+            <th>Contact.Number</th>
+            <td>{{user.userMobileNo}}</td>
+        </tr>
+    </thead>
+    </table>
+<br><br>
+
+    
+<button type="button" class="btn btn-info" (click)="backToList()" >Back To User List</button>
